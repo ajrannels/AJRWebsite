@@ -1,0 +1,548 @@
+﻿body {
+    color: #333;
+    font-family: Lato, arial;
+    background-color: #fff;
+}
+
+
+.starImg {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: lato, Arial;
+    background: url('../images/startrails01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navyStreak {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Lato, Arial;
+    background-color: #f4f4f4;
+}
+
+.bluestreak {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('../images/startrails01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.plainnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+
+
+}
+
+.logo {
+    float: left;
+}
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+li {
+    float: right;
+}
+
+    li a {
+        display: block;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover:not(.active) {
+            background-color: none;
+            font-weight: 700;
+            transform: scale(1.2);
+        }
+
+.active {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#home {
+    margin: 10%;
+    padding: 0;
+}
+
+.whiteFont {
+    text-align: center;
+    color: #fff;
+}
+
+.nameFont {
+    font-family: 'Lobster', cursive;
+    font-size: 72px;
+    text-align: center;
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    font-size: .8em;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.white {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 30%;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-codepen {
+    padding: 10px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 1px;
+    border-radius: 50%;
+    background: brown;
+    color: white;
+}
+
+.fa-dribbble {
+    padding: 10px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 1px;
+    border-radius: 50%;
+    background: #ea4c89;
+    color: white;
+}
+
+.fa-github {
+    padding: 10px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 1px;
+    border-radius: 50%;
+    background: #24292e;
+    color: white;
+}
+
+.fa-linkedin {
+    padding: 10px;
+    font-size: 40px;
+    width: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 1px;
+    border-radius: 50%;
+    color: white;
+    background: transparent;
+    color: white;
+}
+
+    .fa-linkedin:hover {
+        color: #ff6600;
+        opacity: 1;
+    }
+
+.fa-envelope {
+    font-size: 40px;
+    background: transparent;
+    color: white;
+}
+
+    .fa-envelope:hover {
+        color: #ff6600;
+        opacity: 1;
+    }
+
+
+
+aside {
+    text-align: center;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+        padding: 4px;
+    }
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.3%;
+
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.myImg {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+    .myImg:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        opacity: 0.7;
+    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* About Page style*/
+* {
+    box-sizing: border-box
+}
+
+article {
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section {
+    float: right;
+    width: 50%;
+    white-space: nowrap;
+    padding-right: 10%;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    section {
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    article {
+        width: 100%;
+    }
+}
+
+
+.container {
+    width: 80%;
+    background-color: #ddd;
+    float: right;
+}
+
+.container1 {
+    width: 20%;
+    background-color: #ddd;
+    float: left;
+}
+
+.titles {
+    text-align: center;
+    padding: 4px;
+    color: white;
+    font-size: 11px;
+}
+
+.skills {
+    text-align: right;
+    padding: 4px;
+    color: #ef6800;
+    font-size: 11px;
+}
+
+.title1 {
+    background-color: #ff9645;
+}
+
+.html {
+    width: 95%;
+    background-color: #ef6800;
+}
+
+.css {
+    width: 90%;
+    background-color: #ef6800;
+}
+
+.js {
+    width: 75%;
+    background-color: #ef6800;
+}
+
+.illustrator {
+    width: 95%;
+    background-color: #ef6800;
+}
+
+.ps {
+    width: 95%;
+    background-color: #ef6800;
+}
+
+.ui {
+    width: 85%;
+    background-color: #ef6800;
+}
+
+.python {
+    width: 75%;
+    background-color: #ef6800;
+}
+
+.java {
+    width: 65%;
+    background-color: #ef6800;
+}
+
+
+
+
+.aboutImg {
+    border-radius: 90%;
+    width: 90%;
+}
+
+
+/* buttons (: */
+
+.button {
+    border: none;
+    color: white;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.button2 {
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+
+    .button1:hover {
+        background-color: #ff6600;
+        color: white;
+        border: 2px solid #ff6600;
+    }
+
+
+    /*
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+    .button2:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+        */
+
+
+
+
+
